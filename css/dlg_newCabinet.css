@@ -1,0 +1,112 @@
+.form-newCabinet{
+	max-width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	background: transparent;
+	box-shadow: none;
+	padding : 0px;
+	background-color:rgba(0,0,0,0) !important;
+}
+
+.form-newCabinet.required{
+	color:red;
+	font-weight:normal;
+}
+
+
+.form-newCabinet.form-group {
+    margin-bottom: 0rem; 
+}
+
+.form-newCabinet fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 2px 2px 2px 2px;
+	padding: 25px;
+	padding : 0px 25px 0px 25px;
+	border: 1px solid #5c0e00;
+	background: #f0c9a9;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+
+.form-newCabinet fieldset legend{
+	
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	
+	padding: 0px 8px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 16px;
+	color: #000000;
+	border-top: 2px solid #5c0e00;
+	border-left: 1px solid #5c0e00;
+	border-right: 1px solid #5c0e00;
+	background: #f0c9a9;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+}
+
+
+.form-newCabinet  label{	
+	font-size: 14px;
+	/*padding: 10px 8px 5px 8px;	*/
+	text-align:right;
+	font-style:italic;
+	padding-right: 5px;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+
+.form-newCabinet .lbl_nom, 
+.form-newCabinet .lbl_adresse, 
+.form-newCabinet .lbl_cp, 
+.form-newCabinet .lbl_ville, 
+.form-newCabinet .lbl_telephone, 
+.form-newCabinet .lbl_site_web{
+	border: 0px solid #FFC2DC;
+	width : 100%;
+
+}
+
+
+.form-newCabinet  input[type=text],
+.form-newCabinet  input[type=email]{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	outline: none;	
+	padding: 5px 8px 5px 8px;
+	margin-bottom: 5px;
+}
+
+
+.form-newCabinet .input_nom, 
+.form-newCabinet .input_adresse, 
+.form-newCabinet .input_cp, 
+.form-newCabinet .input_ville, 
+.form-newCabinet .input_telephone, 
+.form-newCabinet .input_site_web{
+	border: 1px solid #5c0e00;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+
+.form-newCabinet .input_nom{width:100%;}
+.form-newCabinet .input_adresse {width:100%; }
+.form-newCabinet .input_cp {width:20%; }
+.form-newCabinet .input_ville {width:50%; }
+.form-newCabinet .input_telephone {width:100%; }
+.form-newCabinet .input_site_web {width:100%; }

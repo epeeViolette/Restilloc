@@ -1,0 +1,104 @@
+@font-face{
+    font-family: "Monsterize";
+    src: url("../fonts/Monsterize.woff");
+}
+
+body {background-color: #dde4f1;}
+
+#header{ 
+    width:100%;
+    min-height:00px;
+    background-color: aqua;
+    font-family:"Monsterize";
+    font-size: 50px;
+}
+
+#menu{ 
+    width:100%;
+    height:62px;
+    border:1px solid;
+    margin: auto;
+    background-color:#dde4f1;
+}
+
+#content{ 
+    width:100%;
+    min-height: 450px;
+    
+    padding : 15px 5px;
+    background-color: rgb(221, 228, 241);
+}
+
+
+#footer{ 
+    width:100%;
+    height:30px;
+    
+    line-height: 30px;
+    background-color: rgb(20, 220, 70);
+}
+
+#footer .gauche{ 
+    margin-left:30px;
+    float:left;
+    
+    background-color: red;
+}
+
+#footer .droite{ 
+    margin-right:30px;
+    
+    font-size: 10px;
+    float:right;
+    background-color: yellow;
+}
+
+
+
+/*Style pour la boite de login */
+
+/*le cadre (<div>) qui contient le formulaire */
+#form_container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* la partie <form>...</form> */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/*pour le titre */
+#form_container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+
+
+.bg-light {
+    background-color: #dde4f1!important
+}
+
+.form_navbar {
+    margin:0px;
+    padding : 0px;
+    background :transparent;
+    box-shadow : none;
+    border : none;
+}
+
+.form_navbar input{
+    border: 1px solid #6f7072;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #f0efb7;
+	-moz-box-shadow: inset 1px 1px 4px #f0efb7;
+	-webkit-box-shadow: inset 1px 1px 4px #f0efb7;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}

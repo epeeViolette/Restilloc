@@ -1,0 +1,117 @@
+
+.form-newRdv{
+	max-width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	background: transparent;
+	box-shadow: none;
+	padding : 0px;
+    margin:0px;
+	background-color:rgba(0,0,0,0) !important;
+}
+
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+
+.form-group {
+    margin-bottom: 0rem; 
+}
+
+.form-newRdv fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+}
+
+.form-newRdv fieldset{ 
+	border: 1px solid #FFE5AA;
+	background: #FFF4AA;
+	box-shadow: inset 0px 0px 15px #FFE5AA;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5AA;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5AA;
+}
+
+.form-newRdv fieldset legend{
+	
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	
+	padding: 0px 8px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+.form-newRdv fieldset legend{
+	color: #000000;
+	border-top: 1px solid #FFD2AA;
+	border-left: 1px solid #FFD2AA;
+	border-right: 1px solid #FFD2AA;
+	background: #FFF4AA;
+	box-shadow: -0px -1px 2px #F1F1AA;
+	-moz-box-shadow:-0px -1px 2px #F1F1AA;
+	-webkit-box-shadow:-0px -1px 2px #F1F1AA;
+}
+
+.form-newRdv  label{	
+	font-size: 14px;
+	padding: 10px 8px 5px 8px;
+	
+	text-align:right;
+	font-style:italic;
+}
+
+
+
+.form-newRdv  input[type=text],
+.form-newRdv  input[type=email],
+.form-newRdv  input[type=date],
+.form-newRdv input[type=datetime-local],
+.form-newRdv .select_client,
+.form-newRdv .select_vehicule,
+.form-newRdv .select_expert, 
+.form-newRdv .select_garage{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	outline: none;	
+	padding: 5px 8px 5px 8px;
+	margin-bottom: 5px;
+}
+
+
+.form-newRdv .lbl_client, 
+.form-newRdv .lbl_vehicule,
+.form-newRdv .lbl_expert, 
+.form-newRdv .lbl_garage, 
+.form-newRdv .lbl_date_rdv {	
+	border: 0px solid #FFC2DC;
+	width : 100%;
+}
+
+.form-newRdv .input_date_rdv,
+.form-newRdv .select_client, 
+.form-newRdv .select_vehicule,
+.form-newRdv .select_expert, 
+.form-newRdv .select_garage{
+ 	width:100%;
+ 	border: 1px solid #fa723c;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #fac693;
+	-moz-box-shadow: inset 1px 1px 4px #fac693;
+	-webkit-box-shadow: inset 1px 1px 4px #fac693;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+
+.form-newRdv .select_vehicule span{
+	font-style:italic;
+}

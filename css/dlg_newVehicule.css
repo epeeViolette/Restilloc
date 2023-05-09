@@ -1,0 +1,135 @@
+
+.form-newVehicule{
+	max-width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	background: transparent;
+	box-shadow: none;
+	padding : 0px;
+    margin:0px;
+	background-color:rgba(0,0,0,0) !important;
+}
+
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+
+.form-group {
+    margin-bottom: 0rem; 
+}
+
+.form-newVehicule fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+}
+
+
+.form-newVehicule fieldset{ 
+	border: 1px solid #AAD2D2;
+	background: #AAF4F4;
+	box-shadow: inset 0px 0px 15px #AAE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #AAE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #AAE5E5;
+}
+
+
+.form-newVehicule fieldset legend{
+	
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	
+	padding: 0px 8px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.form-newVehicule fieldset legend{
+	color: #000;
+	border-top: 1px solid #AAD2AA;
+	border-left: 1px solid #AAD2AA;
+	border-right: 1px solid #AAD2AA;
+	background: #AAF4F4;
+	box-shadow: -0px -1px 2px #AAF1F1;
+	-moz-box-shadow:-0px -1px 2px #AAF1F1;
+	-webkit-box-shadow:-0px -1px 2px #AAF1F1;
+}
+
+
+/* Mise en forme des labels ******************************************************************************/
+.form-newVehicule  label{	
+	font-size: 14px;
+	padding: 10px 8px 5px 8px;
+	
+	text-align:right;
+	font-style:italic;
+}
+
+
+.form-newVehicule .lbl_client, 
+.form-newVehicule .lbl_immatriculation, 
+.form-newVehicule .lbl_motorisation,
+.form-newVehicule .lbl_marque, 
+.form-newVehicule .lbl_modele, 
+.form-newVehicule .lbl_date_mise_en_circulation{
+	border: 0px solid #FFC2DC;
+	width : 100%;
+}
+
+
+.form-newVehicule  input[type=text],
+.form-newVehicule  input[type=email],
+.form-newVehicule  input[type=date],
+.form-newVehicule  input[type=datetime-local],
+.form-newVehicule .select_marque,
+.form-newVehicule .select_modele,
+.form-newVehicule .select_client,
+.form-newVehicule .select_motorisation{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	outline: none;	
+	padding: 5px 8px 5px 8px;
+	margin-bottom: 5px;
+}
+
+
+
+.form-newVehicule .select_client,
+.form-newVehicule .input_date_mise_en_circulation, 
+.form-newVehicule .select_marque, 
+.form-newVehicule .select_modele, 
+.form-newVehicule .input_immatriculation,
+.form-newVehicule .select_motorisation{
+	border: 1px solid #AAC2DC;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #AAD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #AAD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #AAD5E7;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+
+
+.form-newVehicule .select_client,
+.form-newVehicule .input_date_mise_en_circulation {width:100%; }
+.form-newVehicule .select_marque,
+.form-newVehicule .select_modele,
+.form-newVehicule .select_motorisation{
+    width:100%;
+    border: 1px solid #AAC2DC;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #AAD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #AAD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #AAD5E7;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}
+

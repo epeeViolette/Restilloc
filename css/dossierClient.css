@@ -1,0 +1,112 @@
+#dossierClient .client .titre_client {
+    border: 1px solid #0191c1;
+	background-color: #c6e8f3;
+    border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	padding: 0px 15px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 16px;
+
+}
+
+#dossierClient .client .labels_client {
+    
+    font-style:italic;
+    text-align : right ;
+    background-color: #c6e8f3;
+    padding-right: 10px;
+    border:1px solid #0191c1;
+    border-right: none;
+}
+
+#dossierClient .client .valeurs_client {
+    
+    font-weight : bold;
+    text-align : left ;
+    background-color: #9be6ff;
+    padding-left: 2px;
+    border:1px solid #0191c1;
+    border-left: none;
+}
+
+
+#dossierClient .client .titre_vehicule {
+    border: 1px solid #01c137;
+	background-color: #c6f3ca;
+    border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	padding: 0px 15px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 16px;
+
+}
+
+#dossierClient .client .labels_vehicule {
+    
+    font-style:italic;
+    text-align : right ;
+    background-color: #c6f3ca;
+    padding-right: 10px;
+    border:1px solid #01c137;
+    border-right: none;
+}
+
+#dossierClient .client .valeurs_vehicule{
+    
+    font-weight : bold;
+    text-align : left ;
+    background-color: #cdff9b;
+    padding-left: 2px;
+    border:1px solid #01c137;
+    border-left: none;
+}
+
+
+#dossierClient .client .titre_rdv {
+    border: 1px solid #c68700;
+	background-color: #f3ddc6;
+    border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	padding: 0px 15px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 16px;
+
+}
+
+#dossierClient .client .labels_rdv {
+    
+    font-style:italic;
+    text-align : right ;
+    background-color: #f3ddc6;
+    padding-right: 10px;
+    border:1px solid #c68700;
+    border-right: none;
+}
+
+#dossierClient .client .valeurs_rdv{
+    
+    font-weight : bold;
+    text-align : left ;
+    background-color: #ffed9b;
+    padding-left: 2px;
+    border:1px solid #c68700;
+    border-left: none;
+}
+
+
+#dossierClient .boutons{
+    text-align : center ;
+}
+
+#dossierClient .boutons button{
+    margin-left: 15px ;
+}

@@ -1,0 +1,126 @@
+
+.form-newClient{
+	max-width: 100%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border:none;
+	background: transparent;
+	box-shadow: none;
+	padding : 0px;
+    margin:0px;
+	background-color:rgba(0,0,0,0) !important;
+}
+
+.required{
+	color:red;
+	font-weight:normal;
+}
+
+
+.form-group {
+    margin-bottom: 0rem; 
+}
+
+.form-newClient fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 20px;
+}
+
+.form-newClient fieldset{ 
+	border: 1px solid #FFD2D2;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+
+.form-newClient fieldset legend{
+	
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	
+	padding: 0px 8px 3px 8px;
+	
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.form-newClient fieldset legend{
+	color: #000000;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	background: #FFF4F4;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+}
+
+
+.form-newClient  label{	
+	font-size: 14px;
+	padding: 10px 8px 5px 8px;
+	
+	text-align:right;
+	font-style:italic;
+}
+
+
+
+.form-newClient   .lbl_nom, 
+.form-newClient .lbl_prenom, 
+.form-newClient .lbl_adresse,
+.form-newClient .lbl_cp, 
+.form-newClient .lbl_ville, 
+.form-newClient .lbl_telephone, 
+.form-newClient .lbl_portable, 
+.form-newClient .lbl_email{
+	border: 0px solid #FFC2DC;
+	width : 100%;
+}
+
+
+
+.form-newClient  input[type=text],
+.form-newClient  input[type=email],
+.form-newClient  input[type=date],
+.form-newClient input[type=datetime-local] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	outline: none;	
+	padding: 5px 8px 5px 8px;
+	margin-bottom: 5px;
+}
+
+
+.form-newClient .input_nom, 
+.form-newClient .input_prenom, 
+.form-newClient .input_adresse, 
+.form-newClient .input_cp, 
+.form-newClient .input_ville, 
+.form-newClient .input_telephone, 
+.form-newClient .input_portable, 
+.form-newClient .input_email{
+	border: 1px solid #FFC2DC;
+	color: #000000;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFFFFF;
+	margin-bottom: 5px;
+}
+
+
+.form-newClient .input_nom, 
+.form-newClient .input_prenom {width:100%;}
+.form-newClient .input_adresse {width:100%; }
+.form-newClient .input_cp {width:20%; }
+.form-newClient .input_ville {width:50%; }
+.form-newClient .input_telephone {width:100%; }
+.form-newClient .input_portable {width:100%; }
+.form-newClient .input_email {width:100%; }
+
