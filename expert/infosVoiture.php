@@ -14,7 +14,7 @@
         include('../connection.php');
         $link_db = connect_to_db();
          
-        $lien = connect_to_db();
+       
         
         // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
         // pour éliminer toute attaque de type injection SQL et XSS

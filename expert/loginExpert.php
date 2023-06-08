@@ -2,8 +2,8 @@
 <?php
 
 
-    // $_POST['login'] = 'dylan98';
-    // $_POST['password'] = '123456';
+    //  $_POST['login'] = 'dylan98';
+    //  $_POST['password'] = '123456';
 
 
     if(isset($_POST['login']) && isset($_POST['password'])){
@@ -12,7 +12,7 @@
         include('../connection.php');
         $link_db = connect_to_db();
          
-        $lien = connect_to_db();
+        
         
         // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
         // pour éliminer toute attaque de type injection SQL et XSS
@@ -80,8 +80,6 @@ else
 
 
 
-
-    echo '<br> Bonjour';
 
 
 
