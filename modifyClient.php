@@ -12,19 +12,22 @@
         WHERE id_cli=".$id_client_modif." ";
         $req_modif = mysqli_query($link_db, $sql_modif_client ) or die("Erreur dans update_modif : <br>".$sql_modif_client ); 
 
-
-        $sql_select_vehicule = "SELECT id_modele,id_marque FROM modelesvehicules,marquesvehicules WHERE modelesvehicules.nom_modele = '".$_POST['select_modele']."' AND marquesvehicules.nom_marque = '".$_POST['select_marque_modif']."'";
-        $req_modif = mysqli_query($link_db, $sql_select_vehicule ) or die("Erreur dans update_modif : <br>".$sql_select_vehicule );
-        $rows = mysqli_fetch_all($req_modif, MYSQLI_ASSOC);
-        foreach ($rows as $row) {
-            $row["id_modele"];
-            $row["id_marque"];
-        }
+        $id_marque = (int)$_POST["select_marque_modif"];
+        echo 'id de la marque : '.$id_marque.'<br>';
+        $id_modele = (int)$_POST["select_modele"];
+        echo 'id du modele : '.$id_modele;
+        // $sql_select_vehicule = "SELECT id_modele,id_marque FROM modelesvehicules,marquesvehicules WHERE modelesvehicules.nom_modele = ".$_POST['select_modele']." AND marquesvehicules.nom_marque = ".$_POST['select_marque_modif']."";
+        // $req_modif = mysqli_query($link_db, $sql_select_vehicule ) or die("Erreur dans update_modif : <br>".$sql_select_vehicule );
+        // $rows = mysqli_fetch_all($req_modif, MYSQLI_ASSOC);
+        // foreach ($rows as $row) {
+        //     $row["id_modele"];
+        //     $row["id_marque"];
+        // }
 
         $sql_modif_vehicule = "UPDATE vehicules SET 
         dateMEC = '".$_POST['date_modif']."',motorisation = '".$_POST['select_motorisation']."',
-        puissance = '',id_cli = ".$id_client_modif.",id_marque = ".$row["id_marque"].",
-        id_modele = ".$row["id_modele"]." 
+        puissance = '',id_cli = ".$id_client_modif.",id_marque = '".$_POST["select_marque_modif"]."',
+        id_modele = '".$_POST["select_modele"]."'
         WHERE id_cli = ".$id_client_modif."";
         $req_modif = mysqli_query($link_db,$sql_modif_vehicule) or die("Erreur dans update_modif vehicule : <br>".$sql_modif_vehicule );
 
@@ -35,7 +38,7 @@
     }
 ?>
 <script>
-function mettre_a_jour_le_liste_des_modeles(){
+function mettre_a_jour_le_liste_des_marques(){
     id_marque = $("#select_marque").val();
     marque_selected_index=$("#select_marque option:selected").index();
    
@@ -49,6 +52,11 @@ function mettre_a_jour_le_liste_des_modeles(){
         //puis afficher le groupe d'options correspondant à la marque séléctionnée
         $("#select_modele optgroup#"+id_marque).show();
     }
+}
+
+function mettre_a_jour_le_liste_des_modeles(){
+    id_marque = $("#select_modele").val();
+    marque_selected_index=$("#select_modele option:selected").index();
 }
 
 </script>
@@ -123,7 +131,7 @@ function remplir_select_modele_modif($dossierClient){
 <form action="./index.php?page=modifyClient&id_client=<?php echo $dossierClient['id_cli'] ;?>&immatriculation=<?php echo $dossierClient['immatriculation']; ?>" method="post">
 <div id="dossierClient">
     <div class="client row">
-        <div class="col-5">
+        <div class="col-6">
             
             <div class="row p-1">
                 <div class="col-12 titre_client">
@@ -165,10 +173,10 @@ function remplir_select_modele_modif($dossierClient){
                 </div>
                 <div class="col-8 valeurs_vehicule" >
                     <label><?php echo $dossierClient['immatriculation']; ?></label><br>
-                    <select class="selectpicker select_marque" id="select_marque" name="select_marque_modif" onchange="mettre_a_jour_le_liste_des_modeles();">
+                    <select class="selectpicker select_marque" id="select_marque" name="select_marque_modif" onchange="mettre_a_jour_le_liste_des_marques();">
                                     <?php  echo remplir_select_marque_modif($dossierClient) ?>
                     </select><br>
-                    <select class="selectpicker select_modele" id="select_modele" name="select_modele">
+                    <select class="selectpicker select_modele" id="select_modele" name="select_modele" onchange="mettre_a_jour_le_liste_des_modeles();">
                                     <?php   echo remplir_select_modele_modif($dossierClient) ?>    
                     </select><br>
                     <select class="selectpicker select_motorisation" id="select_motorisation" name="select_motorisation" >
@@ -194,32 +202,7 @@ function remplir_select_modele_modif($dossierClient){
 
         </div>
 
-        <div class="col-7">
-              
-            <div class="row p-1">
-                <div class="col-12 titre_rdv">
-                Rendez-vous de restitution
-                </div> 
-                <div class="col-3 labels_rdv" >
-                    Planifié pour le : <br>
-                    avec l'expert : <br>
-                    de la société : <br><br>
-                    lieu de RDV : <br>
-
-                </div>
-                <div class="col-9 valeurs_rdv" >
-                    <input type="datetime-local" name="date_rdv_modif"  value="<?php echo $dossierClient['dateRDV']; ?>"><br>
-                    Nom :  <input type="text" name="nom_exp_rdv_modif"  value="<?php echo $dossierClient['nom_exp']; ?>">
-                      Prénom :  <input type="text" name="prenom_exp_rdv_modif"  value="<?php echo $dossierClient['prenom_exp']; ?>"><br> 
-                    <input type="text" name="nom_cab_rdv_modif"  value="<?php echo $dossierClient['nom_cab']?>"><br><br>
-                    <input type="text" name="nom_gar_rdv_modif"  value="<?php echo $dossierClient['nom_gar']?>"><br>
-                    <input type="text" name="adresse_gar_rdv_modif"  value="<?php echo $dossierClient['adresse_gar']?>"><br>
-                    Code Postal : <input type="text" name="adresse_gar_rdv_modif"  value="<?php echo $dossierClient['cp_gar'] ?>"><br>
-                     Ville :  <input type="text" name="adresse_gar_rdv_modif"  value="<?php echo $dossierClient['ville_gar']; ?>">
-                    
-                </div>
-            </div>
-        </div>
+        
     </div>   
         <div style="text-align: center;margin-top:200px;">
             <input type="submit" class="btn btn-danger btn-sm" name="btn_maj" value="Mettre à jour">

@@ -101,5 +101,5 @@
         ?>
 
         <!-- <div class="search-container" style="text-align: center;margin-top:200px;">
-            <a class="btn btn-danger btn-sm" href="./index.php?page=modifyDossierClient&id_client=<?php echo $dossierClient['id_cli'] ;?>&immatriculation=<?php echo $dossierClient['immatriculation']; ?>" name="traitement" value="modifierDossier" type="submit">Modifier</a>
+            <a class="btn btn-danger btn-sm" href="./index.php?page=modifyDossierClient&id_client=<?php //echo $dossierClient['id_cli'] ;?>&immatriculation=<?php //echo $dossierClient['immatriculation']; ?>" name="traitement" value="modifierDossier" type="submit">Modifier</a>
         </div> -->

@@ -135,9 +135,9 @@ function get_vehicules_client($link_db, $id_client){
 // Dossier : infos sur le client (nom, ...) ,  ses vehicules (immatriculation, modele et marque)
 // et ses rendez-vous (avec quel expert, ou et quand)
 //
-function get_DossierClient_by_id($link_db, $id_client, $immatriculation){
+function get_DossierClient_by_id($link_db, $id_client){
 	console_log( $id_client );
-	console_log( $immatriculation );
+	//console_log( $immatriculation );
 
 	// $where = "Client.id_cli = '".$id_client."'";
 

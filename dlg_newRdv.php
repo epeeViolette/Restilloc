@@ -3,7 +3,7 @@
 function mettre_a_jour_la_liste_des_vehicules(){
     id_client = $("#select_cli").val();
     client_selected_index=$("#select_client option:selected").index();
-    alert(id_client);
+    // alert(id_client);
 
     $('#select_vehicule optgroup[value="'+id_client+'"]').show();
     /*

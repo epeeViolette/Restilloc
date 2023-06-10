@@ -184,14 +184,15 @@ function console_log( $data ){
                                                 close_db($link_db);
                                                 include("dossierClient.php");
                                                 break;
-                        case "modifyDossierClient" :    $id_client = $_GET['id_client'];
-                                                        $immatriculation = $_GET['immatriculation'];
+                        case "modifyClient" :           $id_client = $_GET['id_client'];
+                                                        //$immatriculation = $_GET['immatriculation'];
                                                         $link_db = connect_to_db();
-                                                        $dossierClient = get_DossierClient_by_id($link_db, $id_client, $immatriculation) ;
+                                                        $dossierClient = get_DossierClient_by_id($link_db, $id_client);
                                                         close_db($link_db);
-                                                        include("modifyDossierClient.php");
+                                                        include("modifyClient.php");
                                                         break;
                         case "liste_dossiers": 
+                            
                             $link_db = connect_to_db();
                             $liste_clients = get_all_clients($link_db);
                             afficherListeClients($liste_clients,$link_db);
