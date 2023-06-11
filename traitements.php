@@ -147,7 +147,7 @@ function recupererDonneesGarage(){
 }
 
 //
-//Récupérer les données du garage à partir du POST
+//Récupérer les données du rdv à partir du POST
 //
 function recupererDonneesRdv(){
     $rdv['immatriculation'] = $_POST['select_vehicule'] ;
@@ -314,7 +314,7 @@ function insert_garage($link_db, $garage)
 
 //
 // Inserer un nouveau rendez-vous dans la table avoirrendezvous
-//
+//  Inserer un nouveau dossier dans la table dossierderestitution
 function insert_rdv($link_db, $rdv)
 {
 	$sql = "INSERT INTO avoirrendezvous (
@@ -334,6 +334,9 @@ function insert_rdv($link_db, $rdv)
     
     $req = mysqli_query($link_db, $sql) or die("Erreur dans insert_rdv : <br>".$sql); 
     //echo "<br>requette SQL : <br><br>".$sql;
+
+    $sql_restitution = "INSERT INTO dossiersderestitution (immatriculation,dateCreation) values ('".$rdv['immatriculation']."','".$rdv['dateRDV']."')";
+    $req_restitution = mysqli_query($link_db, $sql_restitution) or die("Erreur dans insert_rdv : <br>".$sql_restitution); 
 }
 
 
